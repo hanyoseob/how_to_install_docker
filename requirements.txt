@@ -1,0 +1,10 @@
+webcolors
+albumentations
+matplotlib
+pandas
+scikit-image
+pydicom
+python-gdcm
+efficientnet_pytorch
+tensorboard
+fvcore
