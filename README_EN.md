@@ -17,7 +17,6 @@ $ sudo docker build -t ge_bpm .
 `-t` or `--tag` is the option to set `the name of the container image`.
 
 ---
-
 ## 2. How to `check` the ***list of docker image***  
 
 ### General command
@@ -26,26 +25,7 @@ $ sudo docker images
 ```
 
 ---
-
-## 3. How to `check` the ***list of container*** ?
-
-### General command
-```
-$ sudo docker ps [OPTIONS]
-```
-
-### *Example command
-```
-$ sudo docker ps
-```
-```
-$ sudo docker ps -a
-```
-`-a` or `--all` shows containers including the exited containers.
-
----
-
-## 4. How to `create` the ***container*** ?
+## 3. How to `create` the ***container*** ?
 
 ### General command
 ```
@@ -62,6 +42,23 @@ $ sudo docker create -i -t -p 8999-9000:8999-9000 -v '/home':'/home' -v '/home/l
 `--shm-size` Size of /dev/shm \
 `--gpus` GPU devices to add to the container ('all' to pass all GPUs)\
 (https://docs.docker.com/reference/)
+
+---
+## 4. How to `check` the ***list of container*** ?
+
+### General command
+```
+$ sudo docker ps [OPTIONS]
+```
+
+### *Example command
+```
+$ sudo docker ps
+```
+```
+$ sudo docker ps -a
+```
+`-a` or `--all` shows containers including the exited containers.
 
 ---
 ## 5. How to `start` the ***container*** ?

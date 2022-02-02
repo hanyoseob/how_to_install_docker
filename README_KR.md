@@ -1,9 +1,9 @@
-# Installation the Docker 
-- Please see the reference of the docker to check the more details. 
+# 도커 설치하는 법
+- 자세한 사항은 아래의 도커 레퍼런스를 참고하세요. 
   - https://docs.docker.com/reference/
 
 ---
-## 1. How to `build` the ***docker image** ?
+## 1. ***도커 이미지*** 를 생성 (`build`) 하는 법?
 
 ### General command
 ```
@@ -18,34 +18,17 @@ $ sudo docker build -t ge_bpm .
 
 ---
 
-## 2. How to `check` the ***list of docker image***  
+## 2. 생성된 ***도커 이미지*** 를 확인 (`check`) 하는 법?  
 
 ### General command
 ```
 $ sudo docker images 
 ```
+생성된 도커 이미지들의 리스트를 확인할 수 있음.
 
 ---
 
-## 3. How to `check` the ***list of container*** ?
-
-### General command
-```
-$ sudo docker ps [OPTIONS]
-```
-
-### *Example command
-```
-$ sudo docker ps
-```
-```
-$ sudo docker ps -a
-```
-`-a` or `--all` shows containers including the exited containers.
-
----
-
-## 4. How to `create` the ***container*** ?
+## 3. ***도커 컨테이너*** 를 생성 (`create`) 하는 법?
 
 ### General command
 ```
@@ -63,8 +46,26 @@ $ sudo docker create -i -t -p 8999-9000:8999-9000 -v '/home':'/home' -v '/home/l
 `--gpus` GPU devices to add to the container ('all' to pass all GPUs)\
 (https://docs.docker.com/reference/)
 
+## 4. 생성된 ***도커 컨테이너*** 를 확인 (`check`) 하는 법?
+
+### General command
+```
+$ sudo docker ps [OPTIONS]
+```
+
+### *Example command
+```
+$ sudo docker ps
+```
+```
+$ sudo docker ps -a
+```
+`-a` or `--all` shows containers including the exited containers.
+
 ---
-## 5. How to `start` the ***container*** ?
+
+---
+## 5. 생성된 ***도커 컨테이너*** 를 시작 (`start`) 하는 법?
 
 ### General command
 ```
@@ -77,7 +78,7 @@ $ sudo docker start ge_bpm_detection
 ```
 
 ---
-## 6. How to `attach` the ***container*** ?
+## 6. 생성된 ***도커 컨테이너*** 에 접속 (`attach`) 하는 법?
 
 ### General command
 ```
@@ -90,7 +91,7 @@ $ sudo docker attach ge_bpm_detection
 ```
 
 ---
-## 7. How to `run`, including `create`, `start` and `attach`, the ***container*** ?
+## 7. ***도커 컨테이너*** 를 실행 (`run`) 하는 법? (생성: `create`, 시작: `start`, and 접속: `attach` 를 모두 포함)
 
 ### General command
 ```
@@ -108,7 +109,7 @@ $ sudo docker run -i -t -p 8999-9000:8999-9000 -v '/home':'/home' -v '/home/loca
 (https://docs.docker.com/reference/)
 
 ---
-## 8. How to `remove` the ***container*** ?
+## 8. 생성된 ***도커 컨테이너*** 를 제거 (`remove`) 하는 법?
 
 ### General command
 ```
@@ -125,7 +126,7 @@ $ sudo docker rm ${CONTAINER_ID}
 `sudo docker ps -a` is executed to check the `CONTAINER_ID`.
 
 ---
-## 9. How to `remove` the ***docker image*** ?
+## 9. 생성된 ***도커 이미지*** 를 제거 (`remove`) 하는 법?
 
 ### General command
 ```
