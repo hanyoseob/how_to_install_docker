@@ -1,6 +1,9 @@
 # 도커 설치하는 법
 - 자세한 사항은 아래의 도커 레퍼런스를 참고하세요. 
-  - https://docs.docker.com/reference/
+  - [EN] https://docs.docker.com/reference/
+  
+  - [KR] https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html
+  - [KR] https://www.44bits.io/ko/post/easy-deploy-with-docker
 
 ---
 ## 1. ***도커 이미지*** 를 생성 (`build`) 하는 법?
