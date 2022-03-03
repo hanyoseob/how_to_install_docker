@@ -112,7 +112,28 @@ $ sudo docker run -i -t -p 8999-9000:8999-9000 -v '/home':'/home' -v '/home/loca
 (https://docs.docker.com/reference/)
 
 ---
-## 8. 생성된 ***도커 컨테이너*** 를 제거 (`remove`) 하는 법?
+## 8. 생성된 ***도커 컨테이너*** 를 중지 (`stop`) 하는 법?
+
+### General command
+```
+$ sudo docker stop [OPTIONS] CONTAINER [CONTAINER_ID...] 
+```
+
+### *Example command
+```
+$ sudo docker stop ge_bpm_detection
+```
+
+---
+## 9. 생성된 ***도커 컨테이너*** 를 중지 (`stop`) 없이 빠져나오는 법?
+
+### General command
+```
+Ctrl + p + q
+```
+
+---
+## 10. 생성된 ***도커 컨테이너*** 를 제거 (`remove`) 하는 법?
 
 ### General command
 ```
@@ -129,7 +150,7 @@ $ sudo docker rm ${CONTAINER_ID}
 `sudo docker ps -a` is executed to check the `CONTAINER_ID`.
 
 ---
-## 9. 생성된 ***도커 이미지*** 를 제거 (`remove`) 하는 법?
+## 11. 생성된 ***도커 이미지*** 를 제거 (`remove`) 하는 법?
 
 ### General command
 ```

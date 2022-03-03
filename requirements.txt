@@ -8,3 +8,4 @@ python-gdcm
 efficientnet_pytorch
 tensorboard
 fvcore
+pyyaml

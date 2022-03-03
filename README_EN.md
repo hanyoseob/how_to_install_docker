@@ -105,7 +105,32 @@ $ sudo docker run -i -t -p 8999-9000:8999-9000 -v '/home':'/home' -v '/home/loca
 (https://docs.docker.com/reference/)
 
 ---
-## 8. How to `remove` the ***container*** ?
+## 8. How to `stop` the ***container*** ?
+
+### General command
+```
+$ sudo docker stop [OPTIONS] CONTAINER_ID [CONTAINER_ID...] 
+```
+### *Example command
+```
+$ sudo docker ps -a
+
+... CHECK THE CONTAINER ID OF THE CONTAINER TO BE REMOVED
+
+$ sudo docker stop ${CONTAINER_ID}
+```
+`sudo docker ps -a` is executed to check the `CONTAINER_ID`.
+
+---
+## 9. How to `escape` the ***container*** without `stop` ?
+
+### General command
+```
+Ctrl + p + q 
+```
+
+---
+## 10. How to `remove` the ***container*** ?
 
 ### General command
 ```
@@ -122,7 +147,7 @@ $ sudo docker rm ${CONTAINER_ID}
 `sudo docker ps -a` is executed to check the `CONTAINER_ID`.
 
 ---
-## 9. How to `remove` the ***docker image*** ?
+## 11. How to `remove` the ***docker image*** ?
 
 ### General command
 ```
