@@ -40,7 +40,7 @@ $ sudo docker create [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
 
 ### *Example command
 ```
-$ sudo docker create -i -t -p 8999-9000:8999-9000 -v '/home':'/home' -v '/home/local/PARTNERS/yh880/mnt/women_health_internal/DBT/yh880/workspace':'/workspace' --shm-size 4gb --gpus all --name ge_bpm_detection ge_bpm
+$ sudo docker create -i -t -p 8999-9000:8999-9000 -v '/home':'/home' -v '/home/local/PARTNERS/yh880/mnt/women_health_internal/DBT/yh880/workspace':'/workspace' --shm-size 4gb --gpus all --name ge_bpm_classification ge_bpm
 ```
 
 `--volume, -v` Bind mount a volume \
@@ -77,7 +77,7 @@ $ sudo docker start [OPTIONS] CONTAINER [CONTAINER...]
 
 ### *Example command
 ```
-$ sudo docker start ge_bpm_detection
+$ sudo docker start ge_bpm_classification
 ```
 
 ---
@@ -90,7 +90,7 @@ $ sudo docker attach [OPTIONS] CONTAINER
 
 ### *Example command
 ```
-$ sudo docker attach ge_bpm_detection
+$ sudo docker attach ge_bpm_classification
 ```
 
 ---
@@ -103,7 +103,7 @@ $ sudo docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
 
 ### *Example command
 ```
-$ sudo docker run -i -t -p 8999-9000:8999-9000 -v '/home':'/home' -v '/home/local/PARTNERS/yh880/mnt/women_health_internal/DBT/yh880/workspace':'/workspace' --shm-size 4gb --gpus all --name ge_bpm_detection ge_bpm
+$ sudo docker run -i -t -p 8999-9000:8999-9000 -v '/home':'/home' -v '/home/local/PARTNERS/yh880/mnt/women_health_internal/DBT/yh880/workspace':'/workspace' --shm-size 4gb --gpus all --name ge_bpm_classification ge_bpm
 ```
 `--volume, -v` Bind mount a volume \
 `--publish, -p` Publish a container's port(s) to the host \
@@ -121,7 +121,7 @@ $ sudo docker stop [OPTIONS] CONTAINER [CONTAINER_ID...]
 
 ### *Example command
 ```
-$ sudo docker stop ge_bpm_detection
+$ sudo docker stop ge_bpm_classification
 ```
 
 ---
